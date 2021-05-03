@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dropdown Menu Responsive</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<header class="header">
+     <div class="container">
+        <div class="header-main">
+           <div class="logo">
+              <a href="#">Portfolio RK&nbsp;</a>
+           </div>
+           <div class="open-nav-menu">
+              <span></span>
+           </div>
+           <div class="menu-overlay">
+           </div>
+           <!-- navigation menu start -->
+           <nav class="nav-menu">
+             <div class="close-nav-menu">
+                <img src="img/close.svg" alt="close">
+             </div>
+             <ul class="menu">
+                 <li class="menu-item">
+                   <a href="index.html">Home</a>
+                </li>
+               
+                      
+               
+                <li class="menu-item">
+                   <a href="about.html">About</a>
+                </li>
+               
+                <li class="menu-item menu-item-has-children">
+                   <a href="#" data-toggle="sub-menu">Portfolio <i class="plus"></i></a>
+                   <ul class="sub-menu">
+                       <li class="menu-item"><a href="website.html">Website</a></li>
+                       <li class="menu-item"><a href="graphic.html">Graphic</a></li>
+                       <li class="menu-item"><a href="poster.html">Poster</a></li>
+                       
+                   </ul>
+                </li>
+                <li class="menu-item">
+                   <a href="exp.html">Expirience</a>
+                </li>
+                <li class="menu-item">
+                   <a href="contact.html">Contact</a>
+                </li>
+             </ul>
+           </nav>
+           <!-- navigation menu end -->
+        </div>
+     </div>
+  </header>
+	
+	<div id="pagecontainer">
+<div id="contentwrap">
+	<section2>
+<h2>Magazine(In Design)</h2>
+<p>Thsi is the magazine i have created for my graphic design work.This magazine was created in proffesional software called Adobe InDesign each single page was created from the scracth.In order to create this magazine ive been working with many different softwares such as Photoshop,Illustrator and Adobe Indesign.If you have any question related to this work you can get in touch with me in the contact page!  </p></section2>
+
+	
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  
+    
+   
+  <div class="mySlides fade">
+    
+    <img src="Images/Mag1.png" style="width:50%">
+    <div class="text"></div>
+  </div>
+	
+  
+
+  <div class="mySlides fade">
+    
+    <img src="Images/Mag2.png" style="width:50%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    
+    <img src="Images/Mag3.png" style="width:50%">
+    <div class="text">Caption Three</div>
+  </div>
+		
+	<div class="mySlides fade">
+    
+    <img src="Images/Mag4.png" style="width:50%">
+    <div class="text">Caption Three</div>
+  </div>
+	
+	<div class="mySlides fade">
+    
+    <img src="Images/Mag5.png" style="width:50%">
+    <div class="text">Caption Two</div>
+  </div>
+		
+	
+
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<!-- header start -->
+  
+  <!-- header end -->
+<!-- home section start -->
+ 
+ <!-- home section end -->
+	
+		</div>	
+ <footer class="fixed">
+  <div class="Icons"> <img alt="facebook" src="Images/Facebook.jpg"> <img alt="twitter" src="Images/Facebook.jpg"> <img alt="instagram" src="Images/Facebook.jpg"> </div>
+  
+</footer>
+	</div>
+
+	
+<script src="js/script.js"></script>
+</body>
+</html>

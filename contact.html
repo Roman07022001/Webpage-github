@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dropdown Menu Responsive</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div id="contact-form">
+	<div>
+		<h1>Nice to Meet You!</h1> 
+		<h4>Have a question or just want to get in touch? Let's chat.</h4> 
+	</div>
+		<p id="failure">Oopsie...message not sent.</p>  
+		<p id="success">Your message was sent successfully. Thank you!</p>
+
+		   <form method="post" action="/">
+			<div>
+		      <label for="name">
+		      	<span class="required">Name: *</span> 
+		      	<input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
+		      </label> 
+			</div>
+			<div>
+		      <label for="email">
+		      	<span class="required">Email: *</span>
+		      	<input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
+		      </label>  
+			</div>
+			<div>		          
+		      <label for="subject">
+		      <span>Subject: </span>
+			      <select id="subject" name="subject" tabindex="4">   
+			         <option value="hello">Product Choice</option>
+			         <option value="quote">Website</option>  
+			         <option value="general">Poster</option>
+					  <option value="general">Magazine</option>
+			      </select>
+		      </label>
+			</div>
+			<div>		          
+		      <label for="message">
+		      	<span class="required">Message: *</span> 
+		      	<textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea> 
+		      </label>  
+			</div>
+			<div>		           
+		      <button name="submit" type="submit" id="submit" >SEND</button> 
+			</div>
+		   </form>
+
+	</div>
+	
+	
+
+  <!-- header start -->
+  <header class="header">
+     <div class="container">
+        <div class="header-main">
+           <div class="logo">
+            
+           </div>
+           <div class="open-nav-menu">
+              <span></span>
+           </div>
+           <div class="menu-overlay">
+           </div>
+           <!-- navigation menu start -->
+           <nav class="nav-menu">
+             <div class="close-nav-menu">
+                <img src="img/close.svg" alt="close">
+             </div>
+             <ul class="menu">
+                 <li class="menu-item">
+                   <a href="index.html">Home</a>
+                </li>
+               
+                      
+               
+                <li class="menu-item">
+                   <a href="about.html">About</a>
+                </li>
+               
+                <li class="menu-item menu-item-has-children">
+                   <a href="#" data-toggle="sub-menu">Portfolio <i class="plus"></i></a>
+                   <ul class="sub-menu">
+                       <li class="menu-item"><a href="website.html">Website</a></li>
+                       <li class="menu-item"><a href="graphic.html">Graphic</a></li>
+                       <li class="menu-item"><a href="poster.html">Poster</a></li>
+                       
+                   </ul>
+                </li>
+                <li class="menu-item">
+                   <a href="exp.html">Expirience</a>
+                </li>
+                <li class="menu-item">
+                   <a href="contact.html">Contact</a>
+                </li>
+             </ul>
+           </nav>
+           <!-- navigation menu end -->
+        </div>
+     </div>
+  </header>
+  <!-- header end -->
+
+ <!-- home section start -->
+ 
+ <!-- home section end -->
+	
+
+<footer>
+  <div class="Icons"> <img alt="facebook" src="Images/Facebook.jpg"> <img alt="twitter" src="Images/Facebook.jpg"> <img alt="instagram" src="Images/Facebook.jpg"> </div>
+  
+</footer>
+
+ 
+<script src="js/script.js"></script>
+</body>
+</html>
